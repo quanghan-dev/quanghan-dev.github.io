@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/favicon.ico">
+    <title>Lịch Gỗ Phù Điêu Cao Cấp - Chiết khấu CỰC CAO, CAM KẾT RẺ NHẤT</title>
+
+</head>
+
+<body>
+
+    <!-- Top header -->
+    <div class="top-header">
+        <p id="top-header-p">Để hỗ trợ nhanh nhất: &nbsp;<a href="tel:0966 28 38 99" style="color: white;"><i
+                    class="fa fa-phone"></i> 0966 28 38 99</a>
+        </p>
+    </div>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light scrolling-navbar sticky-top"
+        style="padding: 0rem 1rem; margin-bottom: .5rem;">
+
+        <!--navbar brand desktop-->
+        <a class="navbar-brand mb-0 h1 brand-desktop" href="#" style="color: rgb(210, 0, 0); font-size: 1.5rem;">
+            <img src="files/PhucLongLogo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+            Lịch Tết Phúc Long
+        </a>
+
+        <!--navbar brand mobile-->
+        <a class="navbar-brand mb-0 h1 brand-mobile" href="#" style="color: rgb(210, 0, 0); font-size: 1.5rem;">
+            <img src="files/PhucLongLogo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+            <div class="mobile-brand-name d-inline-block align-top">
+                <p id="top-brand">Lịch Tết </p>
+                <p id="bot-brand">Phúc Long</p>
+            </div>
+        </a>
+
+        <!--button open sidenav-->
+        <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--sidenav-->
+        <div id="sidenav" class="sidenav">
+
+            <!--close sidenav-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: -1rem;">&times;</a>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch gỗ cao cấp Sidenav-->
+            <button class="dropdown-btn">
+                Lịch gỗ cao cấp
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Lịch Phù Điêu</a>
+                <div class="dropdown-divider" style="border-top: 1px solid #ffe9e9;"></div>
+                <a href="#">Lịch Khung Tranh Gắn Phù Điêu</a>
+            </div>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch Gỗ 3D cao cấp Sidenav-->
+            <button class="dropdown-btn">
+                Lịch Gỗ 3D Cao Cấp
+            </button>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch Gỗ Thư Pháp Sidenav-->
+            <button class="dropdown-btn">
+                Lịch Gỗ Thư Pháp
+            </button>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch Gỗ 3D khung tranh Sidenav-->
+            <button class="dropdown-btn">
+                Lịch Gỗ 3D Khung Tranh
+            </button>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch Gỗ Phật Giáo Sidenav-->
+            <button class="dropdown-btn">
+                Lịch Gỗ Phật Giáo
+            </button>
+            <div class="dropdown-divider"></div>
+
+            <!--Lịch Gỗ Công Giáo Sidenav-->
+            <button class="dropdown-btn">
+                Lịch Gỗ Công Giáo
+            </button>
+        </div>
+
+        <!--navbar desktop-->
+        <div class="collapse navbar-collapse dropdown-menu-right" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-between">
+                <!-- Lịch Gỗ Cao Cấp-->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lịch Gỗ Cao Cấp&nbsp;
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lịch Phù Điêu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Lịch Khung Tranh Gắn Phù Điêu</a>
+                    </div>
+                </li>
+
+                <!-- Lịch Gỗ 3D cao cấp -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Lịch Gỗ 3D Cao Cấp
+                    </a>
+                </li>
+                <!-- Lịch Gỗ Thư Pháp -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Lịch Gỗ Thư Pháp</a>
+                </li>
+
+                <!-- Lịch Gỗ 3D khung tranh -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lịch Gỗ 3D Khung Tranh
+                    </a>
+                </li>
+                <!-- Lịch Gỗ Phật Giáo -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lịch Gỗ Phật Giáo
+                    </a>
+                </li>
+                <!-- Lịch Gỗ Công Giáo -->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lịch Gỗ Công Giáo
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input class="form-control search-box" type="search" placeholder="Bạn cần tìm gì?"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
+
+            <!--Shopping cart-->
+            <form class="form-inline my-sm-0 shopping-cart">
+                <button class="btn btn-outline-danger">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="badge badge-secondary badge-danger">1</span>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- San Pham Chinh-->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+
+                    <!--Ảnh sản phẩm-->
+                    <div class="row product-gallery mx-1">
+                        <div class="col-12 mb-0 view">
+                            <!-- Ảnh Chính * 4 -->
+                            <div class="mySlides">
+                                <img src="files/ChuLoc.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="files/DiLacTaiLoc.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="files/LocPhat.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <img src="files/KimSuuTaiLoc.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <!-- Ảnh nhỏ -->
+                                <div class="col-3">
+                                    <div class="view btn">
+                                        <img class="demo cursor" src="files/ChuLoc.jpg" style="width:100%"
+                                            onclick="currentSlide(1)">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="view btn">
+                                        <img class="demo cursor" src="files/DiLacTaiLoc.jpg" style="width:100%"
+                                            onclick="currentSlide(2)">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="view btn">
+                                        <img class="demo cursor" src="files/LocPhat.jpg" style="width:100%"
+                                            onclick="currentSlide(3)">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="view btn">
+                                        <img class="demo cursor" src="files/KimSuuTaiLoc.jpg" style="width:100%"
+                                            onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Tên sản phẩm -->
+                    <h4 style="margin: 1rem 0 1rem 0;"><strong>Lịch Gỗ Phù Điêu Lộc Phát</strong></h4>
+                    <!-- Tình trạng -->
+                    <p class="mb-2 text-muted text-uppercase small">TÌNH TRẠNG: CÒN HÀNG</p>
+                    <!-- Giá sản phẩm -->
+                    <h5 style="margin-bottom: 1rem;">
+                        <span class="mr-1">
+                            <strong class="text-red">690.000 VNĐ</strong>
+                        </span>
+                    </h5>
+                    <!--Chi tiết ngắn-->
+                    <div class="table-responsive">
+                        <table class="table table-sm table-borderless mb-0">
+                            <tbody>
+                                <tr>
+                                    <th class="pl-0 w-25">Kích Thước</th>
+                                    <td>35cm x 65cm x 3cm</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 w-25">Công nghệ</th>
+                                    <td>In 3D siêu sắc nét</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 w-25">Phù Điêu</th>
+                                    <td>Cây Mai Vàng Lộc Phát</td>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0 w-25">Độ Bền</th>
+                                    <td>5 năm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <!--Đặt hàng-->
+                    <div class="table-responsive mb-2">
+                        <table class="table table-sm table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th class="pl-0" style="width: 30%;">
+                                        Số lượng sản phẩm
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="pl-0">
+                                        <div class="def-number-input number-input mb-0">
+                                            <button
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                class="minus">
+                                                -
+                                            </button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button
+                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                class="plus">
+                                                +
+                                            </button>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <!--Mua Ngay button-->
+                                        <button class="btn mb-2 mr-3 btn-danger">
+                                            Mua Ngay
+                                        </button>
+                                        <!--Thêm vào giỏ hàng button-->
+                                        <button class="btn mb-2 mr-3 btn-light">
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Quà tặng-->
+                    <div class="promotion">
+                        <p class="text-red"><i class="fas fa-gift"></i> Quà tặng kèm theo</p>
+                        <p><i class="fas fa-gift"></i> Bloc lịch 2022 trị giá 85.000đ</p>
+                        <p><i class="fas fa-gift"></i> Quảng cáo doanh nghiệp miễn phí</p>
+                        <p><i class="fas fa-gift"></i> Giao toàn quốc - Kiểm hàng trước khi thanh toán</p>
+                        <p class="text-red">KHÁCH HÀNG DOANH NGHIỆP HOẶC ĐẠI LÝ VUI LÒNG LIÊN HỆ ĐỂ ĐƯỢC HƯỞNG CHIẾT
+                            KHẤU CAO NHẤT <a href="tel:0966 28 38 99" class="text-red">
+                                <i class="fa fa-phone"></i> 0966 28 38 99</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Chi Tiết -->
+        <div class="mb-5">
+            <div class="row">
+                <div class="col-md-12 mb-4 mb-md-0">
+                    <div class="blog-content">
+                        <p>
+                        <h5 style="text-align: justify;">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+                        </h5>
+                        <p style="text-align: justify;">
+                            <strong>Lịch Gỗ Phù Điêu Lộc Phát</strong> Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Numquam, sapiente illo. Sit error voluptas repellat rerum
+                            quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos
+                            sapiente tempore alias.
+                        </p>
+
+                        <h5 style="text-align: justify;">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+                        </h5>
+                        <p style="text-align: justify;">
+                            <strong>Lịch Gỗ Phù Điêu Lộc Phát</strong> Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Numquam, sapiente
+                            illo. Sit error voluptas repellat rerum
+                            quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos
+                            sapiente tempore alias.
+                            <span id="dots">...</span>
+                        </p>
+
+                        <p style="text-align: justify;">
+                            <img alt="Khung That" src="files/KhungThat.jpg" style="width: 100%;">
+                        </p>
+                        <span id="more">
+                            <!-- doublicate -->
+                            <p style="text-align: justify;">
+                                <strong>Lịch Gỗ Phù Điêu Lộc Phát</strong> Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Numquam, sapiente illo. Sit error voluptas repellat rerum
+                                quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore
+                                quos
+                                sapiente tempore alias.
+                            </p>
+                            <h5 style="text-align: justify;">
+                                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+                            </h5>
+                            <p style="text-align: justify;">
+                                <strong>Lịch Gỗ Phù Điêu Lộc Phát</strong> Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Numquam, sapiente
+                                illo. Sit error voluptas repellat rerum
+                                quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore
+                                quos
+                                sapiente tempore alias.
+                            </p>
+                            <p style="text-align: justify;">
+                                <img alt="Khung That" src="files/KhungThat.jpg" style="width: 100%;">
+                            </p>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="product-left_blog-content_showmore">
+                        <a title="Xem thêm" onclick="readmoreBtn()" class="button_readmore" id="xemthem">Xem thêm <i
+                                class="fa fa-angle-down"></i></a>
+                        <a title="Rút gọn" onclick="readmoreBtn()" class="button_readmore" id="rutgon">Rút gọn <i
+                                class="fa fa-angle-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Sản phẩm tương tự -->
+        <section class="text-center">
+            <h4 class="text-center my-5">
+                <strong>Sản phẩm tương tự</strong>
+            </h4>
+            <!-- Danh sách -->
+            <div class="row">
+                <!-- sản phẩm 1 -->
+                <div class="col-md-6 col-lg-3 mb-5 ">
+                    <div class="view">
+                        <a href="#" role="button">
+                            <img src="files/ChuLoc.jpg" alt="Lịch Gỗ Phù Điêu Chữ Lộc" class="hvr-grow">
+                        </a>
+
+                    </div>
+                    <div class="pt-4">
+                        <h5>Lịch Gỗ Phù Điêu Chữ Lộc</h5>
+                        <p><span class="text-red"><strong>Liên Hệ</strong></span></p>
+                    </div>
+                </div>
+                <!-- sản phẩm 2 -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <a href="#">
+                        <div class="view">
+                            <img src="files/DiLacTaiLoc.jpg" alt="Lịch Gỗ Phù Điêu Di Lặc Tài Lộc" class="hvr-grow">
+                        </div>
+                    </a>
+                    <div class="pt-4">
+                        <h5>Lịch Gỗ Phù Điêu Di Lặc Tài Lộc</h5>
+                        <p><span class="text-red"><strong>Liên Hệ</strong></span></p>
+                    </div>
+                </div>
+                <!-- sản phẩm 3 -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <a href="#">
+                        <div class="view">
+                            <img src="files/plt.jpg" alt="Lịch Gỗ Phù Điêu Phúc Lộc Thọ" class="hvr-grow">
+                        </div>
+                    </a>
+                    <div class="pt-4">
+                        <h5>Lịch Gỗ Phù Điêu Phúc Lộc Thọ</h5>
+                        <p><span class="text-red"><strong>Liên Hệ</strong></span></p>
+                    </div>
+                </div>
+                <!-- sản phẩm 4 -->
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <a href="#">
+                        <div class="view">
+                            <img src="files/KimSuuTaiLoc.jpg" alt="Lịch Gỗ Phù Điêu Kim Sửu Tài Lộc" class="hvr-grow">
+                        </div>
+                    </a>
+                    <div class="pt-4">
+                        <h5>Lịch Gỗ Phù Điêu Kim Sửu Tài Lộc</h5>
+                        <p><span class="text-red"><strong>Liên Hệ</strong></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class=" bg-light text-center text-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/lichtetphuclong"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Đăng ký để nhận tin</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4 input-group">
+                                <input type="email" id="form5Example2" class="form-control"
+                                    placeholder="Email đăng ký" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                        style="    border: 1px solid #ced4da;">Theo dõi</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase" style="text-align: left;">Thông tin liên
+                            hệ</h5>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled mb-0" style="text-align: left;">
+                            <li>
+                                <h6>CÔNG TY TY TNHH SX & TM PHÚC LONG</h6>
+                            </li>
+                            <li>
+                                VPĐD: 60/7C Nguyễn Văn Quá, P. Đông Hưng Thuận, Q.12, TP.
+                                HCM <br>
+                                Điện thoại: <a href="tel:028 6682 1866" style="margin-bottom: 0;">028 6682 1866</a>
+                                - Hotline: <a href="tel:0966 28 38 99">0966 28 38 99</a>
+
+                                <address style="margin-bottom: 0;">Email: <a
+                                        href="mailto:kinhdoanhphuclong@gmail.com">kinhdoanhphuclong@gmail.com</a>
+                                </address>
+                                Website: <a href="https://www.lichtetphuclong.com">www.lichtetphuclong.com</a><br>
+                            </li>
+                            <li>
+                                <a href="http://online.gov.vn/Home/WebDetails/70580" target="_blank"><span
+                                        style="font-size: 12pt; font-family: 'times new roman', times, serif;"><img
+                                            src="files/bo-cong-thuong.png" alt="" width="150"
+                                            height="60">&nbsp;</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase" style="text-align: left;">Chính Sách</h5>
+                        <div class="dropdown-divider"></div>
+                        <ul class="list-unstyled mb-0 " style="text-align: left;">
+                            <li>
+                                <a href="#!" class="text-dark">Chính sách giao hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Chính sách thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Chính sách đổi trả hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark ">Chính sách bảo mật thông
+                                    tin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.638810283672!2d106.62848261532517!3d10.838928492279127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bf46b2b9155%3A0x41eebf2ec4fbac28!2zTOG7i2NoIHThur90IFBow7pjIExvbmcgLSBpbiBs4buLY2ggdOG6v3QgMjAyMSwgaW4gbOG7i2NoIHThur90IGdpw6EgcuG6uw!5e0!3m2!1svi!2s!4v1618463198761!5m2!1svi!2s"
+                            width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright: ©2021
+            <a class="text-dark"></a>| This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by
+            <a href="https://fb.com/7.quanghan.7" style="color: black;">Nguyen Quang Han</a>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="script.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
