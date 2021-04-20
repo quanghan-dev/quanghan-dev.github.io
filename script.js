@@ -98,11 +98,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-window.addEventListener("scroll", function () {
-  $(".dropdown-search").css("display", "none")
-})
-
-function openSearch() {
-  $(".dropdown-search").css("display", "block")
-}

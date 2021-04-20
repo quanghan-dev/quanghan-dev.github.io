@@ -46,23 +46,13 @@
         </a>
         <!--button open sidenav-->
         <div style="display: flex;">
-            <div class="nav-item dropdown active" style="display: flex;">
-                <a class="nav-search" onclick="openSearch()" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" style="color: rgba(0,0,0,.5);">
+            <div class="nav-item dropdown active " style="display: flex;">
+                <a class="nav-search navbar-toggler" data-toggle="collapse" id="navbarDropdown" role="button"
+                    data-target="#searchToggle" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                    aria-label="Toggle navigation" style="color: rgba(0,0,0,.5);">
                     <i class="fa fa-search"></i>
                 </a>
-                <div class="dropdown-menu dropdown-search">
-                    <form class="form-inline dropdown-item" style="margin-bottom: 0;">
-                        <div class="input-group">
-                            <input class="form-control search-box" type="search" placeholder="Bạn cần tìm gì?"
-                                aria-label="Search">
-                            <div class="input-group-append">
-                                <button class="btn btn-navbar" type="submit">
-                                    <i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
             </div>
 
             <!--button open sidenav-->
@@ -71,6 +61,18 @@
                 onclick="openNav()">
                 <span class="navbar-toggler-icon"></span>
             </button>
+        </div>
+        <div class="collapse" id="searchToggle" style="width: 100%;">
+            <form class="form-inline" style="margin: 0.1rem 0 0.5rem 0;">
+                <div class="input-group">
+                    <input class="form-control search-box" type="search" placeholder="Bạn cần tìm gì?"
+                        aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <!--sidenav-->
@@ -193,6 +195,16 @@
                 </button>
             </form>
         </div>
+    </nav>
+
+    <nav class="visible-xs navbar fixed-bottom">
+        <div class="nav-item visible-xs active bg-danger text-white" style="width: 50%; text-align: center;">
+            <a>Gọi ngay</a>
+        </div>
+        <div class="nav-item visible-xs active bg-danger text-white" style="width: 50%; text-align: center;">
+            <a>Nhắn tin</a>
+        </div>
+        </ul>
     </nav>
 
     <div class="container">

@@ -215,9 +215,9 @@ navbar-toggler-icon {
 
 .dropdown-search {
   padding: 0.1rem 0;
-  left: -17rem;
+  position: fixed;
   margin-top: 0.4rem;
-  min-width: 25.2rem;
+  min-width: 100%;
 }
 
 .nav-search {
