@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,20 +8,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="files/favicon.ico">
     <title>Lịch Gỗ Phù Điêu Cao Cấp - Chiết khấu CỰC CAO, CAM KẾT RẺ NHẤT</title>
 
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.google.com/maps-api-v3/api/js/44/10/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.google.com/maps-api-v3/api/js/44/10/util.js"></script>
 </head>
 
 <body>
 
     <!-- Top header -->
     <div class="top-header">
-        <p id="top-header-p">Để hỗ trợ nhanh nhất: &nbsp;<a href="tel:0966 28 38 99" style="color: white;"><i
-                    class="fa fa-phone"></i> 0966 28 38 99</a>
-        </p>
+        <p id="top-header-p" style="width: 100%; transition: width 0.3s ease 0s; position: relative;">Để hỗ trợ nhanh
+            nhất: &nbsp;<i class="fa fa-phone"></i> 0966 28 38 99</p>
     </div>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-md navbar-light scrolling-navbar sticky-top"
@@ -42,19 +44,40 @@
                 <p id="bot-brand">Phúc Long</p>
             </div>
         </a>
-
         <!--button open sidenav-->
-        <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            onclick="openNav()">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div style="display: flex;">
+            <div class="nav-item dropdown active" style="display: flex;">
+                <a class="nav-search" onclick="openSearch()" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: #333f48;">
+                    <i class="fa fa-search"></i>
+                </a>
+                <div class="dropdown-menu dropdown-search" style="display: block;">
+                    <form class="form-inline dropdown-item">
+                        <div class="input-group">
+                            <input class="form-control search-box" type="search" placeholder="Bạn cần tìm gì?"
+                                aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-navbar" type="submit">
+                                    <i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--button open sidenav-->
+            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
         <!--sidenav-->
-        <div id="sidenav" class="sidenav">
+        <div id="sidenav" class="sidenav" style="width: 0px;">
 
             <!--close sidenav-->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: -1rem;">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: -1rem;">×</a>
             <div class="dropdown-divider"></div>
 
             <!--Lịch gỗ cao cấp Sidenav-->
@@ -182,19 +205,19 @@
                     <div class="row product-gallery mx-1">
                         <div class="col-12 mb-0 view">
                             <!-- Ảnh Chính * 4 -->
-                            <div class="mySlides">
+                            <div class="mySlides" style="display: block;">
                                 <img src="files/ChuLoc.jpg" style="width:100%">
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides" style="display: none;">
                                 <img src="files/DiLacTaiLoc.jpg" style="width:100%">
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides" style="display: none;">
                                 <img src="files/LocPhat.jpg" style="width:100%">
                             </div>
 
-                            <div class="mySlides">
+                            <div class="mySlides" style="display: none;">
                                 <img src="files/KimSuuTaiLoc.jpg" style="width:100%">
                             </div>
 
@@ -206,7 +229,7 @@
                                 <!-- Ảnh nhỏ -->
                                 <div class="col-3">
                                     <div class="view btn">
-                                        <img class="demo cursor" src="files/ChuLoc.jpg" style="width:100%"
+                                        <img class="demo cursor active" src="files/ChuLoc.jpg" style="width:100%"
                                             onclick="currentSlide(1)">
                                     </div>
                                 </div>
@@ -327,6 +350,7 @@
                 <div class="col-md-12 mb-4 mb-md-0">
                     <div class="blog-content">
                         <p>
+                        </p>
                         <h5 style="text-align: justify;">
                             <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
                         </h5>
@@ -380,7 +404,7 @@
                                 <img alt="Khung That" src="files/KhungThat.jpg" style="width: 100%;">
                             </p>
                         </span>
-                        </p>
+                        <p></p>
                     </div>
                     <div class="product-left_blog-content_showmore">
                         <a title="Xem thêm" onclick="readmoreBtn()" class="button_readmore" id="xemthem">Xem thêm <i
@@ -490,8 +514,7 @@
                         <div class="col-md-6 mb-4">
                             <!-- Email input -->
                             <div class="form-outline form-white mb-4 input-group">
-                                <input type="email" id="form5Example2" class="form-control"
-                                    placeholder="Email đăng ký" />
+                                <input type="email" id="form5Example2" class="form-control" placeholder="Email đăng ký">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button"
                                         style="    border: 1px solid #ced4da;">Theo dõi</button>
@@ -515,7 +538,7 @@
                         <div class="dropdown-divider"></div>
                         <ul class="list-unstyled mb-0" style="text-align: left;">
                             <li>
-                                <h6>CÔNG TY TY TNHH SX & TM PHÚC LONG</h6>
+                                <h6>CÔNG TY TY TNHH SX &amp; TM PHÚC LONG</h6>
                             </li>
                             <li>
                                 VPĐD: 60/7C Nguyễn Văn Quá, P. Đông Hưng Thuận, Q.12, TP.
@@ -575,7 +598,7 @@
             Copyright: ©2021
             <a class="text-dark"></a>| This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by
             <a href="https://fb.com/7.quanghan.7" style="color: black;">Nguyen Quang Han</a>
-            </a>
+
         </div>
     </footer>
 
@@ -594,6 +617,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="script.js" crossorigin="anonymous"></script>
+
+    </script>
+
 </body>
 
 </html>
