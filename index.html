@@ -44,15 +44,21 @@
                 <p id="bot-brand">Phúc Long</p>
             </div>
         </a>
-        <!--button open sidenav-->
+        <!--button search mobile-->
         <div style="display: flex;">
             <div class="nav-item dropdown active " style="display: flex;">
                 <a class="nav-search navbar-toggler" data-toggle="collapse" id="navbarDropdown" role="button"
                     data-target="#searchToggle" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                    aria-label="Toggle navigation" style="color: rgba(0,0,0,.5);">
+                    aria-label="Toggle navigation">
                     <i class="fa fa-search"></i>
                 </a>
-
+            </div>
+            <!-- cart mobile -->
+            <div class="nav-item" style="display: flex;">
+                <a class="nav-cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="badge badge-pill badge-danger">1</span>
+                </a>
             </div>
 
             <!--button open sidenav-->
@@ -62,6 +68,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+        <!-- form search mobile -->
         <div class="collapse" id="searchToggle" style="width: 100%;">
             <form class="form-inline" style="margin: 0.1rem 0 0.5rem 0;">
                 <div class="input-group">
@@ -198,10 +205,10 @@
     </nav>
 
     <nav class="visible-xs navbar fixed-bottom">
-        <div class="nav-item visible-xs active bg-danger text-white" style="width: 50%; text-align: center;">
+        <div class="nav-item active bg-danger text-white" style="width: 50%; text-align: center;">
             <a>Gọi ngay</a>
         </div>
-        <div class="nav-item visible-xs active bg-danger text-white" style="width: 50%; text-align: center;">
+        <div class="nav-item active bg-danger text-white" style="width: 50%; text-align: center;">
             <a>Nhắn tin</a>
         </div>
         </ul>
@@ -333,7 +340,7 @@
                                             Mua Ngay
                                         </button>
                                         <!--Thêm vào giỏ hàng button-->
-                                        <button class="btn mb-2 mr-3 btn-light">
+                                        <button class="btn mb-2 mr-3 btn-outline-danger">
                                             Thêm vào giỏ hàng
                                         </button>
                                     </td>
